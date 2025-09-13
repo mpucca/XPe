@@ -1,0 +1,123 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.0.7">
+  <diagram name="C4 - Sistema de Atendimento - Componentes Backend" id="-1DhvllzMI1JU0_VzHDu">
+    <mxGraphModel dx="2078" dy="1873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IRffyfE7NIl3octfFqLO-1" value="API Backend" style="shape=rectangle;fillColor=#ffe6cc;strokeColor=#d79b00;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="50" width="800" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-2" value="Controllers" style="shape=swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;whiteSpace=wrap;html=1;" parent="IRffyfE7NIl3octfFqLO-1" vertex="1">
+          <mxGeometry x="20" y="40" width="220" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-3" value="ClienteController" style="shape=rectangle;fillColor=#ffffff;strokeColor=#000000;whiteSpace=wrap;html=1;" parent="IRffyfE7NIl3octfFqLO-2" vertex="1">
+          <mxGeometry x="20" y="50" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-4" value="ChamadoController" style="shape=rectangle;fillColor=#ffffff;strokeColor=#000000;whiteSpace=wrap;html=1;" parent="IRffyfE7NIl3octfFqLO-2" vertex="1">
+          <mxGeometry x="20" y="110" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-5" value="Services" style="shape=swimlane;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;html=1;" parent="IRffyfE7NIl3octfFqLO-1" vertex="1">
+          <mxGeometry x="280" y="40" width="220" height="400" as="geometry">
+            <mxRectangle x="280" y="40" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-6" value="ClienteService" style="shape=rectangle;fillColor=#ffffff;strokeColor=#000000;whiteSpace=wrap;html=1;" parent="IRffyfE7NIl3octfFqLO-5" vertex="1">
+          <mxGeometry x="20" y="50" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-7" value="ChamadoService" style="shape=rectangle;fillColor=#ffffff;strokeColor=#000000;whiteSpace=wrap;html=1;" parent="IRffyfE7NIl3octfFqLO-5" vertex="1">
+          <mxGeometry x="20" y="110" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-8" value="Repositories" style="shape=swimlane;startSize=30;fillColor=#f8cecc;strokeColor=#b85450;whiteSpace=wrap;html=1;" parent="IRffyfE7NIl3octfFqLO-1" vertex="1">
+          <mxGeometry x="540" y="40" width="220" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-9" value="ClienteRepository" style="shape=rectangle;fillColor=#ffffff;strokeColor=#000000;whiteSpace=wrap;html=1;" parent="IRffyfE7NIl3octfFqLO-8" vertex="1">
+          <mxGeometry x="20" y="50" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-10" value="ChamadoRepository" style="shape=rectangle;fillColor=#ffffff;strokeColor=#000000;whiteSpace=wrap;html=1;" parent="IRffyfE7NIl3octfFqLO-8" vertex="1">
+          <mxGeometry x="20" y="110" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-11" value="CRMConnector" style="shape=hexagon;fillColor=#fff2cc;strokeColor=#d6b656;whiteSpace=wrap;html=1;" parent="IRffyfE7NIl3octfFqLO-1" vertex="1">
+          <mxGeometry x="350" y="460" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-12" value="������ Legenda do Diagrama C4" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="710" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-13" value="Controller (Camada de Entrada)" style="shape=rectangle;fillColor=#dae8fc;strokeColor=#6c8ebf;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-70" y="780" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-14" value="Service (Regras de Negócio)" style="shape=rectangle;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-70" y="840" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-15" value="Repository (Persistência de Dados)" style="shape=rectangle;fillColor=#f8cecc;strokeColor=#b85450;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-70" y="900" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-16" value="Conector Externo (CRM/API)" style="shape=hexagon;fillColor=#fff2cc;strokeColor=#d6b656;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-70" y="960" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-17" value="Banco de Dados SQL" style="shape=cylinder;fillColor=#e1d5e7;strokeColor=#9673a6;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="780" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-18" value="Serviço Externo (CRM/Sistemas de Terceiros)" style="shape=cloud;fillColor=#f8cecc;strokeColor=#b85450;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="840" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-19" value="Usuário (Atendente)" style="shape=person;fillColor=#ffffff;strokeColor=#000000;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="900" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-20" value="Usuário de Atendimento" style="shape=person;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="10" y="-160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-21" value="Aplicação Web (Front-end)" style="shape=rectangle;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="-210" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-22" value="API Backend" style="shape=rectangle;fillColor=#ffe6cc;strokeColor=#d79b00;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="-210" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-23" value="Banco de Dados SQL" style="shape=cylinder;fillColor=#e1d5e7;strokeColor=#9673a6;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="-60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-24" value="Conector de Integração CRM" style="shape=hexagon;fillColor=#f8cecc;strokeColor=#b85450;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="710" y="-210" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-25" value="Serviço Externo de CRM" style="shape=cloud;fillColor=#f8cecc;strokeColor=#b85450;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="960" y="-210" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="IRffyfE7NIl3octfFqLO-20" target="IRffyfE7NIl3octfFqLO-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="IRffyfE7NIl3octfFqLO-21" target="IRffyfE7NIl3octfFqLO-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="IRffyfE7NIl3octfFqLO-22" target="IRffyfE7NIl3octfFqLO-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="IRffyfE7NIl3octfFqLO-22" target="IRffyfE7NIl3octfFqLO-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="IRffyfE7NIl3octfFqLO-24" target="IRffyfE7NIl3octfFqLO-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-31" value="Usuário de Atendimento" style="shape=person;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="155" y="-550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-32" value="Sistema de Atendimento ao Cliente" style="shape=rectangle;fillColor=#dae8fc;strokeColor=#6c8ebf;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="405" y="-550" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-33" value="Banco de Dados SQL" style="shape=cylinder;fillColor=#e1d5e7;strokeColor=#9673a6;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="405" y="-400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-34" value="Serviço Externo de CRM" style="shape=cloud;fillColor=#f8cecc;strokeColor=#b85450;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="705" y="-550" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="IRffyfE7NIl3octfFqLO-31" target="IRffyfE7NIl3octfFqLO-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="IRffyfE7NIl3octfFqLO-32" target="IRffyfE7NIl3octfFqLO-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IRffyfE7NIl3octfFqLO-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="IRffyfE7NIl3octfFqLO-32" target="IRffyfE7NIl3octfFqLO-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
